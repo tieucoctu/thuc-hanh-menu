@@ -1,91 +1,109 @@
 
 body{
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: aqua;
-}
-
-.navigations__menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin: 10px;
-    
-}
-
-.navigations__menu-childs button{
-    margin: 5px;
-    padding: 10px;
-    border-radius: 5px;
-    color: white;
-    position: relative;
-    background-color: transparent;
-    border: none;
     font-weight: 700;
-    position: relative;
+    font-family: Arial, sans-serif;
+    background-image: url(https://hivetech.vn/wp-content/uploads/2020/10/Team-doan-ket-scaled.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.navigations__menu{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-color: rgb(127 120 120);
+    height: 30px;
+    padding-left:100px;
+
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
     
 }
+li{
+    float: left;
 
-.navigations__menu-childs:hover button{
-    background-color: crimson;
-    transition: 0.75s ease;
 }
-.navigations__menu-childs .constant button{
+li a, .dropbtn {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 5px;
+}
+
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
     border-radius: 5px;
-    background-color: crimson;
-}
-.menu__drop{
+  }
+  
+  
+  .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(238, 95, 95);
-    margin: -6px 5px;
-    
-    min-width: 120px;
-}   
-.dropdown{
-    line-height: 25px;
-    padding: 3px 5px;
+    background-color: red;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-}
-.dropdown a{
-    list-style: none;
+  }
+  .constant a{
+    background-color: red;
+    border-radius: 5px;
+  }
+  .dropdown-content li{
+      float: none;
+  }
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
     text-decoration: none;
-    
-    color: white;
-    padding: 5px;
-}
-span{
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content:hover, .dropdown__child:hover {background-color: rgb(235, 93, 93);}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  span{
     float: right;
-    color: white;
-}
-.navigations__menu-childs:hover 
-.menu__drop {
-    display: block;
-    
-   
-}
-.menu__drop .dropdown:hover{
-    background-color:rgb(236, 73, 73);
-}
-.dropdown__child{
     display:none;
-    position: absolute;
-    margin-top: -25px;
-    margin-left: 116px;
-    background-color: rgb(211, 240, 82);
-    min-width: 70px;
-}  
-.dropdown .dropdown__child a{
-    line-height: 25px;
-    padding: 3px 20px 3px 10px; 
-    
-}
-.menu__drop .dropdown:hover .dropdown__child
-{
+  }
+  .more:hover span{
     display: block;
-}
-.dropdown__child a:hover{
-    background-color: rgb(200, 238, 34);
-}
+  } 
+
+  
+  .dropdown__child {
+    display: none;
+    position: absolute;
+    background-color: red;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: -50px 160px;
+  }
+  .dropdown-child a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .constant a{
+    background-color: red;
+    border-radius: 5px;
+  }
+  
+  .dropdown__child a:hover {background-color: red;}
+  
+  .more:hover .dropdown__child {
+    display: block;
+    z-index: 5;
+  }

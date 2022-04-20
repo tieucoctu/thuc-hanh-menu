@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,51 +8,54 @@
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
-<body>
-    <div class="navigations">
-      <div class="navigations__menu">
-        <div class="navigations__menu-childs ">
-            <div class="constant">
-                <button href="#">Home</button>
 
-            </div>
-           
-        </div>
-        <div class="navigations__menu-childs">
-            <button href="#">SERVICES</button>
-        </div>
-        <div class="navigations__menu-childs">
-            <button href="#">OUR COMPANY</button>
-            <div class="menu__drop">
-                
-                <div class="dropdown"><a href="#">home</a></div>
-                <div class="dropdown"><a href="#">home</a></div>
-                <div class="dropdown">
-                    <a href="#">home</a>
-                    
-                    <div class="dropdown__child">
-                        <a href="#">home</a>
-                        <a href="#">home</a>
-                        <a href="#">home</a>
-                    </div>
+<body>
+
+    <div class="navigations__menu">
+        <ul>
+            <li class="navigations__menu-childs">
+                <div class="constant">
+                    <a class="menu-childs" href="#">home</a>
                 </div>
+            </li>
+            <li class="navigations__menu-childs">
+                <a class="menu-childs" href="#">services</a>
+            </li>
+            <li class="navigations__menu-childs">
+                <a class="menu-childs" href="#">our company</a>
+            </li>
+            <li class="dropdown">
+                <a class="dropbtn" href="#">partners</a>
                 
-            </div>
-        </div>
-        <div class="navigations__menu-childs">
-            <button href="#">PARTNERS</button>
-        </div>
-        <div class="navigations__menu-childs">
-            <button href="#">CONTACT</button>
-        </div>
-        <div class="navigations__menu-childs">
-            <button href="#">RECRUITMENT</button>
-        </div>
-        <div class="navigations__menu-childs">
-            <button href="#">BLOGS</button>
-        </div>
-      </div>
+                <div class="dropdown-content">
+                    <ul>
+                    <li class="drop"><a  href="#">Google</a></li>
+                    <li class="drop"><a  href="#">mircrosoft</a></li>
+                    <li class="drop more"><a  href="#">amazone <span>&#62;</span></a>
+                    
+                        <div class="dropdown__child">
+                            <a href="#">facebook</a>
+                            <a href="#">tiktok</a>
+                            <a href="#">twiter</a>
+                        </div>
+                    </li>
+                    </ul>
+                </div>
+
+
+            </li>
+            <li class="navigations__menu-childs">
+                <a class="menu-childs" href="#">contact</a>
+            </li>
+            <li class="navigations__menu-childs">
+                <a class="menu-childs" href="#">recruitment</a>
+            </li>
+            <li class="navigations__menu-childs">
+                <a class="menu-childs" href="#">blogs</a>
+            </li>
+        </ul>
     </div>
     <script src="index.js"></script>
 </body>
+
 </html>
